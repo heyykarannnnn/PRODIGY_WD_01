@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike Store</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/brand_logo.png" alt="brand_logo" />
+      </div>
+
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="https://www.nike.com/retail">Location</a></li>
+        <li><a href="https://about.nike.com/en">About</a></li>
+        <li><a href="https://www.nike.com/in/help/">Contact US</a></li>
+      </ul>
+
+      <button>Login</button>
+    </nav>
+    </header>
+
+    <main class="hero container">
+      <div class="hero-content">
+        <h1>Your Feet Deserve The Best</h1>
+        <p1>
+          YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
+          SHOES.YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
+          SHOES.
+        </p1>
+        <div class="buttons">
+          <button>Shop Now</button>
+          <button class="btn2">Learn More</button>
+        </div>
+        <div class="market-place">
+          <p2>Available on</p2>
+          <div class="markets">
+            <img src="./images/amazon.png" alt="amazon" />
+            <img src="./images/flipkart.png" alt="flipkart" />
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./images/shoe_image.png" alt="shoe_image" />
+      </div>
+    </main>
+<section class="bgimage">
+  <div>
+
+  </div>
+</section>
+
+    <section class="shoes-gallery container">
+      <h2 class="h2">Explore Our Collection</h2>
+      <div class="shoes-items">
+        <!-- Shoe Item -->
+        <div class="shoe-item">
+          <img src="./images/Nikeshoe1.png" alt="Shoe 1">
+          <h3>Ja 1</h3>
+          <p class="price">₹ 9999</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="shoe-item">
+          <img src="./images/Nikeshoe2.png" alt="Shoe 1">
+          <h3>Nike G.T Cut 3</h3>
+          <p class="price">₹ 15999</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="shoe-item">
+          <img src="./images/Nikeshoe3.png" alt="Shoe 1">
+          <h3>KD 17</h3>
+          <p class="price">₹ 12499</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="shoe-item">
+          <img src="./images/Nikeshoe5.png" alt="Shoe 1">
+          <h3>Nike G.T. Jump 2</h3>
+          <p class="price">₹ 1499</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="shoe-item">
+          <img src="./images/Nikeshoe4.png" alt="Shoe 1">
+          <h3>Nike Dunk Low (Pink)</h3>
+          <p class="price">₹ 12999</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="shoe-item">
+          <img src="./images/Nikeshoe6.png" alt="Shoe 1">
+          <h3>Nike Dunk Low (Sky)</h3>
+          <p class="price">₹ 13999</p>
+          <button>Buy Now</button>
+        </div>
+            </div>
+    </section>
+    <script src="script.js"></script>
+ 
+    <script>
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.querySelector(".navbar").style.backgroundColor = "#white";
+        } else {
+          document.querySelector(".navbar").style.backgroundColor = "#red";
+        }
+      }
+      </script>
+      <script>
+        document.querySelectorAll('.shoe-item button').forEach(button => {
+          button.addEventListener('click', function() {
+            alert('Thank you for your purchase!');
+            // Here you can add more functionality for the buy now option
+          });
+        });
+      </script>
+      <footer class="footer">
+        <div class="footer-content container">
+          <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing the best quality shoes for your feet. Our mission is to ensure comfort, durability, and style in every step you take.</p>
+          </div>
+          <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Location</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact-form">
+            <h2>Contact Us</h2>
+            <form>
+              <input type="email" name="email" placeholder="Your email address" required>
+              <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2024 Nike | Designed by Karan Sethi
+        </div>
+      </footer>
+  </body>
+</html>
